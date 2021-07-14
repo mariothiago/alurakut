@@ -23,7 +23,7 @@ function ProfileSidebar(propriedades) {
 }
 
 export default function Home() {
-  const usuarioAleatorio = 'omariosouto';
+  const usuarioAleatorio = 'mariothiago';
   const [comunidades, setComunidades] = React.useState([{
     id: '12802378123789378912789789123896123', 
     title: 'Eu odeio acordar cedo',
@@ -63,7 +63,7 @@ export default function Home() {
           <Box>
             <h2 className="subTitle">O que você deseja fazer?</h2>
             <form onSubmit={function handleCriaComunidade(e) {
-                e.preventDefault();
+                e.preventDefault(); // not-refresh
                 const dadosDoForm = new FormData(e.target);
 
                 console.log('Campo: ', dadosDoForm.get('title'));
@@ -85,6 +85,7 @@ export default function Home() {
                   type="text"
                   />
               </div>
+              
               <div>
                 <input
                   placeholder="Coloque uma URL para usarmos de capa"
@@ -99,6 +100,7 @@ export default function Home() {
             </form>
           </Box>
         </div>
+
         <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
@@ -117,6 +119,7 @@ export default function Home() {
               })}
             </ul>
           </ProfileRelationsBoxWrapper>
+
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
               Pessoas da comunidade ({pessoasFavoritas.length})
