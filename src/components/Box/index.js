@@ -12,16 +12,19 @@ const Box = styled.div`
     text-decoration: none;
     font-weight: 800;
   }
+  
   .title {
     font-size: 32px;
     font-weight: 400;
     margin-bottom: 20px;
   }
+
   .subTitle {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
   }
+
   .smallTitle {
     margin-bottom: 20px;
     font-size: 16px;
@@ -29,12 +32,14 @@ const Box = styled.div`
     color: #333333;
     margin-bottom: 20px;
   }
+
   hr {
     margin-top: 12px;
     margin-bottom: 8px;
     border-color: transparent;
     border-bottom-color: #ECF2FA;
   }
+
   input {
     width: 100%;
     background-color: #F4F4F4;
